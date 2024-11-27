@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a, h3{
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'Crayon_pastel';
+  src: url('font/Crayon_pastel.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Baby_Bears';
+  src: url('font/Baby Bears.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Captain_Blackjack';
+  src: url('font/Captain Blackjack.ttf') format('truetype');
+}
+body{
+  cursor: url('img/lapiz.png'), auto; 
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+a .logo{
+  width: 90px;
+}
+/*Aqui va el segundo logo*/
+.text-logo{
+  text-align: center;
+  font-family: 'Cooper black', cursive;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+}
+.text-logo span{
+  text-shadow: 
+      -1px -1px 0 #fff,  
+       1px -1px 0 #fff,
+      -1px  1px 0 #fff,
+       1px  1px 0 #fff,
+      -1px  0 0 #fff,
+       1px  0 0 #fff,
+      0 -1px 0 #fff,
+      0  1px 0 #fff; /* Sombra en todas las direcciones */
+}
+
+.f { color: #dd3838; }
+.aa { color: #FFC000; }
+.t { color: #00B0F0; }
+.i { color: #7030A0; }
+.m { color: green; }
+.a { color: #D50076;}
+.s { color: #FFC000; }
+.c { color: green; }
+.h { color: #D50076; }
+.oo { color: green; }
+.o { color: #7030A0; }
+.l { color: #00B0F0; }
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+} 
+/*Fin del segundo logo*/
+
+/*.content {
+  padding-top: 70px; /*Espacio para el navbar fijo
+}
+*/
+.navbar{
+  margin: 1%;
+  background-color: #0070C0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border-bottom: 20px solid #029BDE;*/
+}
+
+.nav-item{
+  padding: 0 10px;
+  margin: 10px;
+  font-size: 1.5em;
+  font-family: 'Crayon_pastel';
+  text-align: center;
+}
+
+.dropdown-menu{
+  font-family: 'Crayon_pastel';
+  color: #029BDE;
+  font-size: 20px;
+}
+
+#menu{
+  color: #fff;
+  text-align: center;
+}
+
+#menu:hover, #ta:hover {
+  color: #62c0e9;
+  border-bottom: 2px solid;
+  border-color: #62c0e9;
+}
+
+.navbar .nav-item .active{
+  color: #FDF001;
+  border-bottom: 4px solid #FDF001;
+}
+.active{
+  color: #FDF001;
+}
+
+.info{
+  border: 10px solid transparent;
+  /*border-radius: 15px;*/
+  padding: 0 21px;
+  margin: 20px 0;
+  text-align: center;
+  border-image-source: url('img/borde.png');
+  border-image-repeat: round;
+  border-image-slice: 40;
+}
+#page img, .single img, .text-block img{
+  margin: 0 20px;
+  border-radius: 20%;
+  border-radius: 20%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+  width: 75%;
+}
+
+.paragraph span{
+  display: block;
+  opacity: 0;
+  animation: reveal 0.5s forwards var(--d);
+  font-family: 'Captain_Blackjack';
+  color: #dd3838;
+  font-size: 70px;
+}
+@keyframes reveal {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+    to{
+      opacity: 1;
+      transform: none;
+    }
+}
+
+.division{
+    border: 5px solid;
+    border-color: #0070C0;
+    margin: 20px 0;
+}
+
+/*CARD AULAS*/
+.card, #card{
+  /*border: 4px solid #D50076;*/
+  background-color: #dd3838;
+  border-radius: 30px;
+  text-align: center;
+  align-items: center;
+  margin: 20px ;
+  color: #fff;
+  padding: 10px;
+}
+.card a{
+  color: #fff;
+}
+.cardanio img{
+  width: 60%;
+}
+
+#cuadro{
+  background-color: #0070C0;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+#pad{
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+}
+
+#galeria{
+  font-size: 1.5em;
+  width: 50%;
+  padding: 10px;
+}
+
+#cuadri img{
+  border: 5px solid;
+  border-color: #fff;
+  float: right;
+  width: 80%;
+}
+iframe{
+ width: 80%; 
+}
+
+#Subtitulo{
+  color: #dd3838;
+  font-family: 'Baby_Bears';
+  font-size: 3em;
+}
+.text-block h2{
+  font-size: 1em;
+}
+
+footer{
+  background-color: #0070C0;
+  color: #fff;
+  font-family: Comic Sans MS;
+  font-size: 20px;
+}
+
+footer img{
+  width: 160px;
+}
+footer .icon{
+  width: 40px;
+  margin: 0 5px;
+}
+
+footer h2{
+  font-family: 'Baby_Bears';
+  font-size: 31px;
+}
+.derechos{
+  text-align: center;
+  font-size: 16px;
+  align-items: end;
+}
+
+pre{
+  color: #fff;
+  font-family: Comic Sans MS;
+  font-size: 25px;
+}
